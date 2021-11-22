@@ -1,0 +1,28 @@
+body {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+a {
+  width: 200px;
+  height: 200px;
+}
+
+#search {
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid DarkGrey;
+}
+.searchbox {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;

@@ -1,0 +1,208 @@
+* {box-sizing: border-box;}
+html {
+  font-size: 18px;
+}
+body {
+    background: #ffffff;
+    color: #2d3945;
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+}
+main {
+    margin: 0 auto;
+    padding: 0rem 1rem 1rem;
+}
+h1 {
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-align: center;
+}
+p.intro{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    color: #8a97a0;
+    text-align: center;
+}
+p.footer{
+    margin-bottom: .5rem;
+    font-size: .75rem;
+    color: #8a97a0;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10rem;
+}
+hr.first {
+    border-top: 5px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
+    border-left: none;
+    border-right: none;
+    padding: 2px;
+}
+hr.second {
+    border-top: 3px solid #2d3945;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    margin: 2rem 0;
+}
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+.banner {
+  margin: 2rem 0;
+}
+#logo {
+    background: #2d3945;
+    color: #f9f4f0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+#zip {
+  width: 50%;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  font-family: 'Merriweather', sans-serif;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+  margin: .5rem;
+}
+legend.upper {
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: 1.5rem 0 1rem;
+}
+legend.lower {
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: .5rem 0 0.5rem;
+}
+label.light {
+    display: inline;
+    font-size: .75rem;
+}
+label.newsletter {
+    margin-bottom: 10px;
+    font-size: .75rem;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #829ab1;
+    border-radius: 5px;
+    color: #000000;
+}
+textarea {
+    height: 100px;
+    margin: .5rem 0;
+}
+button {
+    background: #4ebbb5;
+    color: #ffffff;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 18px;
+    font-family: 'Merriweather', sans-serif;
+    border: none;
+    border-radius: 8px;
+    margin: 1.5rem auto 1rem;
+    display: block;
+    cursor: pointer;
+}
+::placeholder {
+  color: #8a97a0;
+  font-style: italic;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  main,
+  body,
+  .banner,
+  .container {
+    display: flex;
+  }
+
+  .container {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex: 1;
+  }
+
+  .container-item {
+    padding: 5px;
+    width: 20px;
+    height: 15px;
+    margin-top: 10px;
+    line-height: 15px;
+  }
+
+
+  main {
+    width: 70%;
+    max-width: 600px
+  }
+
+  .banner,
+  body,
+  main {
+    flex-direction: column;
+  }
+
+  label[for="name"],
+  label[for="email"],
+  label[for="phone"],
+  label[for="address"],
+  label[for="city"],
+  label[for="state"],
+  label[for="zip"] {
+    width: 150px;
+    white-space: nowrap;
+  }
+
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+
+  #zip {
+    width: 25%;
+  }
+}
